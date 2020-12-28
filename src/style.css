@@ -1,0 +1,251 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url(./proximanova/proximanova-regular.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url(./proximanova/proximanova-bold.otf);
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #12121a;
+  font-family: Proxima Nova;
+}
+
+header {
+  max-width: 1440px;
+  width: calc(100% - 280px);
+  margin: 50px auto 0;
+  display: flex;
+}
+
+.white-text {
+  color: white;
+}
+
+.header__greeting {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8544fb;
+}
+
+.header__selfie-wrapper {
+  position: relative;
+}
+
+.header__circle {
+  position: absolute;
+  box-shadow: 4px 1px 20px rgba(255, 255, 255, 0.25);
+  margin-top: 67px;
+  background-color: #8544fb;
+  /* background-image: url(./images/selfie.png);
+  background-position: 0 -140px;
+  background-size: 400px auto;
+  background-repeat: no-repeat; */
+  border-radius: 50%;
+  width: 351px;
+  height: 354.98px;
+}
+
+.header__selfie {
+  /* border: 1px solid red; */
+  position: absolute;
+  top: -66.5px;
+  left: -17px;
+  width: auto;
+  height: 528px;
+  transform: rotate(-0.7deg);
+}
+
+.header__aboutMe {
+  margin-top: 442px;
+}
+
+.header__aboutText {
+  max-width: 560px;
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 120%;
+}
+
+.header__aboutText2 {
+  margin-top: 10px;
+}
+
+.header__name {
+  margin-top: 214px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 85px;
+  color: #8544fb;
+}
+
+.header__subname {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.header__connect-list {
+  display: flex;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.header__connect-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header__connect {
+  margin-left: 24px;
+}
+
+.header__connect:first-of-type {
+  margin-left: 0;
+}
+
+main {
+  margin: 140px auto 0;
+  max-width: 1440px;
+}
+
+.education__title {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+  color: #8544fb;
+}
+
+.education__subtitle-wrapper {
+  margin-top: -20px;
+  flex-direction: row;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.education__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  color: #a8e10c;
+  margin-left: 5px;
+}
+
+.education__chronology {
+  display: flex;
+  margin: 32px auto 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.education__school {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.education__city {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.education__info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.education__about-period {
+  margin-right: 40px;
+}
+
+.education__line {
+  margin: 0 79px;
+}
+
+.education__year {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  letter-spacing: 0.1em;
+  color: #a8e10c;
+}
+
+.education__2018 {
+  display: flex;
+  max-width: 575px;
+  align-items: center;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.education__1521 {
+  height: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.education__about-period-right {
+  margin-left: 40px;
+}
+.education__red {
+  margin-top: 200px;
+}
+.education__red-diploma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education__red-text {
+  margin-top: 38px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+}
