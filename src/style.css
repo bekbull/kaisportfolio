@@ -9,6 +9,28 @@
   src: url(./proximanova/proximanova-bold.otf);
   font-weight: bold;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8544fb;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +39,12 @@
 body {
   background-color: #12121a;
   font-family: Proxima Nova;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 header {
@@ -49,10 +77,6 @@ header {
   box-shadow: 4px 1px 20px rgba(255, 255, 255, 0.25);
   margin-top: 67px;
   background-color: #8544fb;
-  /* background-image: url(./images/selfie.png);
-  background-position: 0 -140px;
-  background-size: 400px auto;
-  background-repeat: no-repeat; */
   border-radius: 50%;
   width: 351px;
   height: 354.98px;
@@ -236,8 +260,9 @@ main {
   margin-top: 200px;
 }
 .education__red-diploma {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  gap: 100px;
   justify-content: center;
 }
 
@@ -382,4 +407,194 @@ main {
   font-size: 16px;
   line-height: 120%;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.gallery {
+  max-width: calc(100% - 280px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.gallery__grid {
+  margin: 0 auto 200px;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  margin-top: 85px;
+  align-items: center;
+  gap: 40px;
+}
+
+.gallery__heading {
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.gallery__text {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 450px;
+}
+
+.gallery__alba {
+  display: grid;
+  max-width: 900px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.gallery__side-text1 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  color: #a8e10c;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 400px;
+  left: -150px;
+}
+
+.alba__card {
+  position: relative;
+  filter: drop-shadow(7px 7px 15px rgba(255, 255, 255, 0.07));
+}
+
+.alba__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.alba__logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.gallery__side-text2 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  color: #a8e10c;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 1090px;
+  left: -175px;
+}
+
+.gallery__side-text3 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 120%;
+  color: #a8e10c;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 1730px;
+  left: -150px;
+}
+
+.alba__insta {
+  width: 20px;
+  height: 20px;
+}
+
+.alba__insta-link {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #a8e10c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 58px;
+}
+
+.alba__site-link {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #a8e10c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+footer {
+  max-width: 1440px;
+  width: calc(100% - 280px);
+  margin: 100px auto 60px;
+}
+
+.footer__author {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__author:hover {
+  opacity: 0.4;
+}
+
+.gallery__wro {
+  margin-top: 160px;
+  display: flex;
+}
+
+.wro__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #ffffff;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.gallery__rm {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.img-hover-zoom {
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+.rm__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.card-tall {
+  grid-row: span 2;
 }

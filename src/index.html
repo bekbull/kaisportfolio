@@ -29,14 +29,26 @@
             <h1 class="header__name">Kaisar Alibekov</h1>
             <h2 class="header__subname">Roboticist</h2>
             <ul class="header__connect-list">
-                <li class="header__connect"><img class="header__connect-icon"
-                        src="<%=require('./images/linkedin.svg')%>" alt=""></li>
-                <li class="header__connect"><img class="header__connect-icon"
-                        src="<%=require('./images/facebook.svg')%>" alt=""></li>
-                <li class="header__connect"><img class="header__connect-icon"
-                        src="<%=require('./images/telegram.svg')%>" alt=""></li>
-                <li class="header__connect"><img class="header__connect-icon" src="<%=require('./images/youtube.svg')%>"
-                        alt=""></li>
+                <li class="header__connect">
+                    <a href="https://www.linkedin.com/in/kaiseasy/" target="_blank">
+                        <img class="header__connect-icon" src="<%=require('./images/linkedin.svg')%>" alt="">
+                    </a>
+                </li>
+                <li class="header__connect">
+                    <a href="https://www.facebook.com/kaiseasy/" target="_blank">
+                        <img class="header__connect-icon" src="<%=require('./images/facebook.svg')%>" alt="">
+                    </a>
+                </li>
+                <li class="header__connect">
+                    <a href="https://t.me/kaiseasy" target="_blank">
+                        <img class="header__connect-icon" src="<%=require('./images/telegram.svg')%>" alt="">
+                    </a>
+                </li>
+                <li class="header__connect">
+                    <a href="https://www.youtube.com/channel/UCgWg2fkqOhxfy2qTHZJmdWw" target="_blank">
+                        <img class="header__connect-icon" src="<%=require('./images/youtube.svg')%>" alt="">
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -94,8 +106,13 @@
             </div>
             <div class="education__red">
                 <div class="education__red-diploma">
-                    <img src="<%=require('./images/redcover.jpg')%>" alt="">
-                    <img src="<%=require('./images/redin.jpg')%>" alt="" style="margin-left: 100px;">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/redcover.jpg')%>" alt="" height="100%">
+                    </div>
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/redin.jpg')%>" alt="" height="100%">
+                    </div>
+
                 </div>
                 <p class="education__red-text text-align-center">
                     <span style="font-weight: bold;">Red Certificate</span> — the award is given to Kazakhstani students
@@ -235,7 +252,9 @@
                     <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M42.1746 5.0169L3.30044 36.7406L43.1931 67.7228" stroke="white" stroke-width="3" />
                     </svg>
-                    <img src="<%=require('./images/hungarycertificate.jpg')%>" class="awards__hungary-certificate">
+                    <a href="https://drive.google.com/drive/folders/1nLf8ynN-E2e0w5CVuMsZhmFawCMOHFaz" target="_blank">
+                        <img src="<%=require('./images/hungarycertificate.jpg')%>" class="awards__hungary-certificate">
+                    </a>
                     <svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M32.8261 69.6833L71.7003 37.9596L31.8077 6.97742" stroke="white" stroke-width="3" />
                     </svg>
@@ -289,8 +308,7 @@
                             Part-time worker at uncle’s cafe
                         </p>
                         <p class="work__date">
-                            11t
-                            h and 12th Grade (in summer and on weekends)
+                            11th and 12th Grade (in summer and on weekends)
                         </p>
                     </div>
                     <p class="work__list">
@@ -302,6 +320,15 @@
             </div>
         </section>
         <section class="gallery">
+            <p class="gallery__side-text1 text-align-center">
+                My soccer robots in <br> a motion:)
+            </p>
+            <p class="gallery__side-text2 text-align-center">
+                “Alba Design” works
+            </p>
+            <p class="gallery__side-text3 text-align-center">
+                WRO Robotics Team <br> “GREATGENZ”
+            </p>
             <h1 class="education__title">gallery</h1>
             <div class="education__subtitle-wrapper">
                 <img src="<%=require('./images/line2.svg')%>" alt="" style="width: 122px;">
@@ -309,8 +336,140 @@
                     MEMORIES
                 </h4>
             </div>
+            <div class="gallery__grid">
+                <iframe width="400px" height="270px" src="https://www.youtube.com/embed/gJOhxgBUvvM" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="gallery__about">
+                    <h3 class="gallery__heading">WRO 2019 National Stage</h3>
+                    <div class="gallery__text">It was the final game of the national robotics competition in the
+                        Football Category held in Pavlodar city. My team, "GREATGENZ," is on the left side.</div>
+                </div>
+                <div class="gallery__about">
+                    <h3 class="gallery__heading text-align-right">WR0 2019 National Team Selection for the World Stage
+                    </h3>
+                    <div class="gallery__text text-align-right">The video was shot on 23 August 2019 in Uralsk city
+                        before the Hungarian
+                        finals during the National Team Selection.</div>
+                </div>
+                <iframe width="400px" height="270px" src="https://www.youtube.com/embed/HqLBFsiJtxU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="gallery__alba">
+                <div class="alba__card">
+                    <img src="<%=require('./images/alba.svg')%>" alt="" class="alba__logo">
+                    <img src="<%=require('./images/alba.jpg')%>" alt="" class="alba__img">
+                    <a href="https://www.instagram.com/p/CCOeQXyp_Ck/" class="alba__insta-link" target="_blank">
+                        <img src="<%=require('./images/insta.svg')%>" alt="" class="alba__insta">
+                    </a>
+                    <a href="https://baza-dom.kz/" class="alba__site-link" target="_blank">
+                        <img src="<%=require('./images/link.svg')%>" alt="" class="alba__insta">
+                    </a>
+                </div>
+                <div class="alba__card">
+                    <img src="<%=require('./images/alba.svg')%>" alt="" class="alba__logo">
+                    <img src="<%=require('./images/alba2.jpg')%>" alt="" class="alba__img">
+                    <a href="https://www.instagram.com/p/CDRbSdVJJcg/" class="alba__insta-link" target="_blank">
+                        <img src="<%=require('./images/insta.svg')%>" alt="" class="alba__insta">
+                    </a>
+                    <a href="https://umitvolunteering.kz/" class="alba__site-link" target="_blank">
+                        <img src="<%=require('./images/link.svg')%>" alt="" class="alba__insta">
+                    </a>
+                </div>
+            </div>
+            <div class="gallery__wro">
+                <div style="margin-right: 20px;">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro1.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="wro__text">Representing our homeland in Gyor, Hungary</p>
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro3.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="wro__text">Kazakhstan National Team (Group Photo)</p>
+                </div>
+
+                <div class="">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro2.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="wro__text">My team's (GREATGENZ) performance in Group 7. We faced the best countries in
+                        the robotics
+                        olympiad, such as Macau and Taiwan (they placed 1st and 3rd respectively at the end of the
+                        competition). We were in the TOP 16.</p>
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro4.jpg')%>" alt="" class="" height="100%"
+                            style="margin-top: 40px;">
+                    </div>
+                    <p class="wro__text">The atmosphere in the Football Category. You can see me in a blue T-shirt with
+                        the attributes of
+                        the Kazakhstani flag.</p>
+                </div>
+            </div>
+            <div class="gallery__rm">
+                <div class="img-hover-zoom card-tall">
+                    <img src="<%=require('./images/rm1.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/rm2.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/rm3.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/rm4.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/rm5.jpg')%>" alt="" class="" height="100%">
+                </div>
+            </div>
+            <p class="rm__text">Practicing my soccer skills in the Real Madrid camp with the Spanish coaches</p>
+            <div class="gallery__rm">
+                <div class="img-hover-zoom card-tall">
+                    <img src="<%=require('./images/wro11.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/wro12.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom  card-tall">
+                    <img src="<%=require('./images/wro13.jpg')%>" alt="" class="" height="100%">
+                </div>
+                <div class="img-hover-zoom">
+                    <img src="<%=require('./images/wro14.jpg')%>" alt="" class="" height="100%">
+                </div>
+            </div>
+            <p class="rm__text">Coding soccer robots with my teammate</p>
+            <div class="gallery__rm">
+                <div class="">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro15.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="rm__text">After the competition with the received awards (Uralsk Team)</p>
+                </div>
+
+                <div class="">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro16.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="rm__text">Being interviewed</p>
+                </div>
+
+                <div class="">
+                    <div class="img-hover-zoom">
+                        <img src="<%=require('./images/wro17.jpg')%>" alt="" class="" height="100%">
+                    </div>
+                    <p class="rm__text">TEDx Performance</p>
+                </div>
+
+            </div>
         </section>
     </main>
+    <footer>
+        <a href="https://github.com/r1chter1/" class="footer__author" target="_blank">
+            © 2020 r1chter1
+        </a>
+    </footer>
 </body>
 
 </html>
