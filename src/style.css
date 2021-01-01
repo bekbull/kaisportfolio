@@ -50,7 +50,7 @@ body {
 header {
   max-width: 1440px;
   width: calc(100% - 280px);
-  margin: 50px auto 0;
+  margin: 0 auto 0;
   display: flex;
 }
 
@@ -110,7 +110,7 @@ header {
 }
 
 .header__name {
-  margin-top: 214px;
+  margin-top: 164px;
   font-style: normal;
   font-weight: bold;
   font-size: 70px;
@@ -135,6 +135,7 @@ header {
 .header__connect-icon {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .header__connect {
@@ -166,6 +167,7 @@ main {
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  align-items: center;
 }
 
 .education__subtitle {
@@ -285,6 +287,7 @@ main {
   margin: 75px auto 140px;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .awards__grid {
@@ -299,7 +302,7 @@ main {
   background-color: #333333;
   height: 98px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -348,11 +351,32 @@ main {
   width: 303px;
   height: 428px;
   filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.35));
+  margin-bottom: 40px;
+  margin: 0 15px;
 }
 
 .awards__certificate {
   display: flex;
   align-items: center;
+  margin-left: 40px;
+}
+
+button {
+  background-color: #96c80e;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+button:active {
+  background-color: #587900;
+  opacity: 0.6;
 }
 
 .work {
@@ -361,12 +385,13 @@ main {
 
 .work__grid {
   padding-top: 33px;
-  border-top: 2px solid #8544fb;
+  /* border-top: 2px solid #8544fb; */
   margin: 70px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 980px;
   gap: 40px;
+  position: relative;
 }
 
 .work__card {
@@ -648,8 +673,13 @@ footer {
 .project__download {
   font-size: 18px;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background: linear-gradient(
+    90deg,
+    #96c80e 0%,
+    rgba(168, 225, 12, 0.930297) 100%
+  );
+  border-color: #96c80e;
+  box-shadow: 0px 4px 45px rgba(168, 225, 12, 0.45);
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 5px;
@@ -714,12 +744,12 @@ ul li {
 .contacts {
   max-width: 1440px;
   width: calc(100% - 280px);
-  margin: 110px auto 0;
+  margin: 110px auto 60px;
   display: grid;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(3, max-content);
-  gap: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 
 .contacts div {
@@ -734,4 +764,25 @@ ul li {
   font-size: 20px;
   line-height: 120%;
   color: #ffffff;
+}
+
+.btn-resume {
+  /* width: 140px; */
+  height: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  max-width: 1440px;
+  width: calc(100% - 280px);
+  margin: 50px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

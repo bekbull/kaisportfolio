@@ -4,13 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="<%=require('./images/selfie.ico')%>" type="image/x-icon">
     <title>Kaisar Alibekov</title>
 </head>
 
 <body>
+    <div class="header">
+        <h1 class="header__greeting">Hi <span class="white-text">there!</span></h1>
+        <a href="<%=require('./docs/ResumeKaisar.pdf')%>" target="_blank" rel="noopener noreferrer"
+            style="text-decoration: none;">
+            <button class="btn-resume"><svg style="margin-right: 5px;" width="25" height="25" viewBox="0 0 25 25"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path
+                            d="M8.33325 17.9167H7.49992C7.26981 17.9167 7.08325 18.1032 7.08325 18.3334C7.08325 18.5635 7.26981 18.75 7.49992 18.75H8.33325C8.56336 18.75 8.74992 18.5635 8.74992 18.3334C8.74992 18.1032 8.56336 17.9167 8.33325 17.9167Z"
+                            fill="white" />
+                        <path
+                            d="M19.9999 17.9167H9.99992C9.76981 17.9167 9.58325 18.1032 9.58325 18.3334C9.58325 18.5635 9.76981 18.75 9.99992 18.75H19.9999C20.23 18.75 20.4166 18.5635 20.4166 18.3334C20.4166 18.1032 20.23 17.9167 19.9999 17.9167Z"
+                            fill="white" />
+                        <path
+                            d="M8.33325 15.4167H7.49992C7.26981 15.4167 7.08325 15.6032 7.08325 15.8334C7.08325 16.0635 7.26981 16.25 7.49992 16.25H8.33325C8.56336 16.25 8.74992 16.0635 8.74992 15.8334C8.74992 15.6032 8.56336 15.4167 8.33325 15.4167Z"
+                            fill="white" />
+                        <path
+                            d="M19.9999 15.4167H9.99992C9.76981 15.4167 9.58325 15.6032 9.58325 15.8334C9.58325 16.0635 9.76981 16.25 9.99992 16.25H19.9999C20.23 16.25 20.4166 16.0635 20.4166 15.8334C20.4166 15.6032 20.23 15.4167 19.9999 15.4167Z"
+                            fill="white" />
+                        <path
+                            d="M8.33325 12.9167H7.49992C7.26981 12.9167 7.08325 13.1032 7.08325 13.3334C7.08325 13.5635 7.26981 13.75 7.49992 13.75H8.33325C8.56336 13.75 8.74992 13.5635 8.74992 13.3334C8.74992 13.1032 8.56336 12.9167 8.33325 12.9167Z"
+                            fill="white" />
+                        <path
+                            d="M19.9999 12.9167H9.99992C9.76981 12.9167 9.58325 13.1032 9.58325 13.3334C9.58325 13.5635 9.76981 13.75 9.99992 13.75H19.9999C20.23 13.75 20.4166 13.5635 20.4166 13.3334C20.4166 13.1032 20.23 12.9167 19.9999 12.9167Z"
+                            fill="white" />
+                        <path
+                            d="M8.33325 10.4166H7.49992C7.26981 10.4166 7.08325 10.6032 7.08325 10.8333C7.08325 11.0634 7.26981 11.25 7.49992 11.25H8.33325C8.56336 11.25 8.74992 11.0634 8.74992 10.8333C8.74992 10.6032 8.56336 10.4166 8.33325 10.4166Z"
+                            fill="white" />
+                        <path
+                            d="M19.9999 10.4166H9.99992C9.76981 10.4166 9.58325 10.6032 9.58325 10.8333C9.58325 11.0634 9.76981 11.25 9.99992 11.25H19.9999C20.23 11.25 20.4166 11.0634 20.4166 10.8333C20.4166 10.6032 20.23 10.4166 19.9999 10.4166Z"
+                            fill="white" />
+                        <path
+                            d="M8.33325 7.91669H7.49992C7.26981 7.91669 7.08325 8.10325 7.08325 8.33335C7.08325 8.56346 7.26981 8.75002 7.49992 8.75002H8.33325C8.56336 8.75002 8.74992 8.56346 8.74992 8.33335C8.74992 8.10325 8.56336 7.91669 8.33325 7.91669Z"
+                            fill="white" />
+                        <path
+                            d="M19.9999 7.91669H9.99992C9.76981 7.91669 9.58325 8.10325 9.58325 8.33335C9.58325 8.56346 9.76981 8.75002 9.99992 8.75002H19.9999C20.23 8.75002 20.4166 8.56346 20.4166 8.33335C20.4166 8.10325 20.23 7.91669 19.9999 7.91669Z"
+                            fill="white" />
+                        <path
+                            d="M22.9112 6.22375C22.9091 6.18724 22.902 6.1512 22.8899 6.11667C22.8853 6.10333 22.882 6.09042 22.8762 6.0775C22.8559 6.03219 22.8277 5.99083 22.7928 5.95542L16.9595 0.122083C16.9241 0.0872396 16.8827 0.0590104 16.8374 0.03875C16.8245 0.0329167 16.8116 0.0295833 16.7987 0.025C16.7638 0.0130208 16.7275 0.00572917 16.6908 0.00333333C16.6837 0.00458333 16.6758 0 16.6666 0H4.99992C4.76981 0 4.58325 0.186562 4.58325 0.416667V1.66667H2.49992C2.26981 1.66667 2.08325 1.85323 2.08325 2.08333V24.5833C2.08325 24.8134 2.26981 25 2.49992 25H19.9999C20.23 25 20.4166 24.8134 20.4166 24.5833V22.5H22.4999C22.73 22.5 22.9166 22.3134 22.9166 22.0833V6.25C22.9166 6.24083 22.912 6.23292 22.9112 6.22375ZM17.0833 1.4225L21.4941 5.83333H17.0833V1.4225ZM19.5833 24.1667H2.91659V2.5H4.58325V22.0833C4.58325 22.3134 4.76981 22.5 4.99992 22.5H19.5833V24.1667ZM22.0833 21.6667H5.41659V0.833333H16.2499V6.25C16.2499 6.4801 16.4365 6.66667 16.6666 6.66667H22.0833V21.6667Z"
+                            fill="white" />
+                        <path
+                            d="M9.99992 3.75H7.49992C7.26981 3.75 7.08325 3.93656 7.08325 4.16667V6.66667C7.08325 6.89677 7.26981 7.08334 7.49992 7.08334H9.99992C10.23 7.08334 10.4166 6.89677 10.4166 6.66667V4.16667C10.4166 3.93656 10.23 3.75 9.99992 3.75ZM9.58325 6.25H7.91659V4.58333H9.58325V6.25Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="25" height="25" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                My resume
+            </button>
+        </a>
+
+    </div>
     <header>
         <div class="">
-            <h1 class="header__greeting">Hi <span class="white-text">there!</span></h1>
+
             <div class="header__selfie-wrapper">
                 <div class="header__circle"></div>
                 <img src="<%=require('./images/selfie.png')%>" alt="" class="header__selfie">
@@ -131,6 +187,8 @@
             </div>
             <div class="awards__grid-certificate">
                 <div class="awards__grid">
+                    <img src="<%=require('./images/main.svg')%>" alt="" style="position: absolute; left: -33px;">
+                    <img src="<%=require('./images/main2.svg')%>" alt="" style="position: absolute; left: 297px;">
                     <div class="awards__grid-element">
                         <div class="awards__grid-title-flag" style="display: flex;">
                             <p class="awards__grid-title">
@@ -160,7 +218,7 @@
                             <img src="<%=require('./images/kazakhstan.svg')%>" class="awards__flag">
                         </div>
                         <div class="awards__grid-year-result">
-                            <p class="awards__year">2017</p>
+                            <p class="awards__year">2018</p>
                             <p class="awards__result">Winner</p>
                         </div>
                     </div>
@@ -249,15 +307,19 @@
                 </div>
                 <!-- awards grid  hungarycertificate.jpg-->
                 <div class="awards__certificate">
-                    <svg width="75" height="75" viewBox="0 0 75 75" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M42.1746 5.0169L3.30044 36.7406L43.1931 67.7228" stroke="white" stroke-width="3" />
-                    </svg>
-                    <a href="https://drive.google.com/drive/folders/1nLf8ynN-E2e0w5CVuMsZhmFawCMOHFaz" target="_blank">
-                        <img src="<%=require('./images/hungarycertificate.jpg')%>" class="awards__hungary-certificate">
-                    </a>
-                    <svg width="75" height="74" viewBox="0 0 75 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M32.8261 69.6833L71.7003 37.9596L31.8077 6.97742" stroke="white" stroke-width="3" />
-                    </svg>
+                    <button id="left">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30.6481 4.12235L3.30055 26.4396L31.3645 48.2351" stroke="white"
+                                stroke-width="3" />
+                        </svg>
+                    </button>
+                    <img src="<%=require('./images/1.jpg')%>" class="awards__hungary-certificate">
+                    <button id="right">
+                        <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.4262 49.6143L50.7737 27.2971L22.7097 5.50155" stroke="white"
+                                stroke-width="3" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </section>
@@ -265,12 +327,16 @@
         <section class="work">
             <h1 class="education__title">WORK EXPERIENCE</h1>
             <div class="education__subtitle-wrapper">
-                <img src="<%=require('./images/line2.svg')%>" alt="" style="width: 343px;">
+                <svg width="343" height="3" viewBox="0 0 343 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="-1.31134e-07" y1="1.5" x2="343" y2="1.49997" stroke="white" stroke-width="3" />
+                </svg>
+
                 <h4 class="education__subtitle">
                     TAKE A LOOK
                 </h4>
             </div>
             <div class="work__grid">
+                <img src="<%=require('./images/dunno.svg')%>" alt="" style="position: absolute; top: -7px;">
                 <div class="work__card">
                     <div class="work__title-date">
                         <p class="work__title">
@@ -293,7 +359,7 @@
                             Robotics teacher at public secondary school
                         </p>
                         <p class="work__date">
-                            01/2020 - 05/2020
+                            01/2020 - 06/2020
                         </p>
                     </div>
                     <p class="work__list">
@@ -467,7 +533,10 @@
         <section class="project">
             <h1 class="education__title">RESEARCH ABOUT THE POVERTY SITUATION</h1>
             <div class="education__subtitle-wrapper">
-                <img src="<%=require('./images/line2.svg')%>" alt="" style="width: 915px;">
+                <svg width="920" height="3" viewBox="0 0 920 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.31134e-07" y1="1.5" x2="920" y2="1.50006" stroke="white" stroke-width="3" />
+                </svg>
+
                 <h4 class="education__subtitle">
                     PROJECT WORK
                 </h4>
@@ -497,7 +566,10 @@
         <section class="alba">
             <h1 class="education__title">“ALBA DESIGN” BUSINESS PLAN</h1>
             <div class="education__subtitle-wrapper">
-                <img src="<%=require('./images/line2.svg')%>" alt="" style="width: 670px;">
+                <svg width="670" height="3" viewBox="0 0 670 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.31134e-07" y1="1.5" x2="670" y2="1.50006" stroke="white" stroke-width="3" />
+                </svg>
+
                 <h4 class="education__subtitle">
                     CAREER
                 </h4>
@@ -507,7 +579,7 @@
                 <img src="<%=require('./images/ad2.jpg')%>" alt="" class="alba__slide" style="left: 25%;">
                 <img src="<%=require('./images/ad3.jpg')%>" alt="" class="alba__slide"
                     style="right: 0; top: 15%; z-index: -2;">
-                <a href="https://drive.google.com/drive/folders/1CEgvvMpbGmKzVC_HjDF9o8uc8wudd74v"
+                <a href="<%=require('./docs/AlbaDesign.pdf')%>"
                     style="position: absolute; left: 0; top: 100%; z-index: 2;" target="_blank"
                     class="project__download" role="button">
                     Read more
@@ -517,7 +589,10 @@
         <section class="summer">
             <h1 class="education__title">SUMMER ACTIVITIES</h1>
             <div class="education__subtitle-wrapper">
-                <img src="<%=require('./images/line2.svg')%>" alt="" style="width: 390px;">
+                <svg width="390" height="3" viewBox="0 0 390 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="1.31134e-07" y1="1.5" x2="390" y2="1.50006" stroke="white" stroke-width="3" />
+                </svg>
+
                 <h4 class="education__subtitle">
                     FREE TIME
                 </h4>
@@ -615,11 +690,11 @@
             </div>
         </section>
     </main>
-    <footer>
+    <!-- <footer>
         <a href="https://github.com/r1chter1/" class="footer__author" target="_blank">
             © 2020 r1chter1
         </a>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
