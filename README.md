@@ -2,7 +2,7 @@
 
 ### Обзор
 
-Website was build for Kaisar Alibekov
+Website was built for Kaisar Alibekov
 
 **Figma**
 
